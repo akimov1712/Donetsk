@@ -4,10 +4,9 @@
   padding: 16px 64px
   display: flex
   justify-content: space-between
-
   background-color: $secondary_color
 
-  & .header__name
+  &__name
     width: 100%
     font-size: 18px
     color: $trinary_color
@@ -19,8 +18,136 @@
   display: flex
   justify-content: space-around
 
-  & .nav__link
+  &__link
     font-family: Roboto Mono, sans-serif
     font-weight: 500
     font-size: 16px
     color: $trinary_color
+
+    &:hover
+      color: $primary_color
+
+.main
+  padding: 64px 128px
+  display: flex
+  justify-content: center
+
+.biography
+  padding: 48px 62px
+  display: inline-flex
+  flex-direction: column
+  color: $secondary_color
+  gap: 24px
+  font-family: $Roboto
+  border-radius: 32px
+  background-color: $primary_color
+
+  &__image
+    width: 250px
+    height: 250px
+    border-radius: 16px
+
+  &__name
+    width: 250px
+    font-weight: 600
+    font-size: 44px
+
+  &__age
+    font-weight: 400
+    font-size: 22px
+
+.experience
+  width: 250px
+  align-items: center
+  justify-content: center
+  display: flex
+  font-family: $Roboto
+  flex-direction: column
+
+  &__item
+    display: flex
+    flex-direction: Row
+    align-items: center
+
+  &__year
+    font-weight: 700
+    font-size: 74px
+    text-shadow: 0 2px 3px $secondary_color
+
+  &__descr
+    margin-left: 12px
+    font-weight: 400
+    font-size: 22px
+
+.career
+  margin-left: 64 + 32px
+  width: 100%
+
+  &__title
+    font-family: $Roboto_mono
+    font-size: 48px
+    font-weight: 700
+
+.skills
+  font-family: $Roboto
+  margin-top: 64px
+  display: flex
+  flex-direction: row
+
+  &__title
+    font-size: 32px
+    font-weight: 400
+    display: block
+    transform: translate(-100%, -40px)
+    height: 0
+    transform-origin: left bottom
+    rotate: -90deg
+
+
+.progress
+  display: flex
+  font-family: $Roboto
+  flex-direction: column
+  margin-left: 24px
+  gap: 10px
+
+  &__wrapper
+    display: grid
+    width: 100%
+    grid-gap: 32px 64px
+    transform: translateX(-64px)
+    justify-content: space-between
+    grid-template-columns: 50% 50%
+
+  &__title
+    font-size: 24px
+    font-weight: 600
+
+  &__value
+    font-size: 20px
+    font-weight: 600
+
+
+  &__stats
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: end
+
+  &__progress
+    height: 12px
+    display: block
+    width: 100%
+
+
+    =progress-bar
+      border-radius: 33px
+
+    &::-webkit-progress-bar
+      +progress-bar
+      background-color: $secondary_color
+
+    &::-webkit-progress-value
+      +progress-bar
+      background-color: $primary_color
+
