@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feed</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <p class="header__name">Donetsk</p>
+            <nav class="nav">
+                <a href="../developer/developer.html" class="nav__link">Developer</a>
+                <a href="../main/main.html" class="nav__link">Main</a>
+                <a href="../history/history.html" class="nav__link">History</a>
+                <a href="../infrastructure/infrastructure.html" class="nav__link">Infrastructure</a>
+                <a href="../culture/culture.html" class="nav__link">Culture</a>
+                <a href="../feedback/feedback.html" class="nav__link nav__link_selected">Feedback</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="feedback">
+            <h2 class="feedback__title">Feedback</h2>
+    
+            <form class="form" action="/send_feedback" method="POST">
+                <div class="form__item">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form__item">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="topic">Topic</label>
+                    <input class="form__input"  type="topic" id="topic" name="topic" placeholder="Topic" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__input"  type="message" id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+
+                <button class="form__button" type="submit">Submit</button>
+            </form>
+        </section>
+    
+    </main>
+    
+</body>
+</html>

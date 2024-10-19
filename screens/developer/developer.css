@@ -1,0 +1,245 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import "../../theme/components/header.css";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  background-color: #F3F5F6;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  padding: 64px 128px;
+  display: flex;
+  justify-content: center;
+}
+
+.biography {
+  padding: 48px 62px;
+  display: inline-flex;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 24px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 32px;
+  background-color: #3F8FFF;
+}
+.biography__image {
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+}
+.biography__name {
+  width: 250px;
+  font-weight: 600;
+  font-size: 44px;
+}
+.biography__age {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.experience {
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+}
+.experience__item {
+  display: flex;
+  flex-direction: Row;
+  align-items: center;
+}
+.experience__year {
+  font-weight: 700;
+  font-size: 74px;
+  text-shadow: 0 2px 3px #ffffff;
+}
+.experience__descr {
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.career {
+  margin-left: 96px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.career__title {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.career_item__title {
+  font-size: 32px;
+  font-weight: 400;
+  display: block;
+  transform: translate(-100%, -40px);
+  height: 0;
+  transform-origin: left bottom;
+  rotate: -90deg;
+}
+
+.skills {
+  font-family: "Roboto", sans-serif;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+}
+
+.career__wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 32px 64px;
+  transform: translateX(-64px);
+  justify-content: space-between;
+  grid-template-columns: 50% 50%;
+}
+
+.progress {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  margin-left: 24px;
+  gap: 10px;
+}
+.progress__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.progress__value {
+  font-size: 20px;
+  font-weight: 600;
+}
+.progress__stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.progress__progress {
+  height: 12px;
+  display: block;
+  width: 100%;
+}
+.progress__progress::-webkit-progress-bar {
+  border-radius: 33px;
+  background-color: #ffffff;
+}
+.progress__progress::-webkit-progress-value {
+  border-radius: 33px;
+  background-color: #3F8FFF;
+}
+
+.instruments {
+  margin-top: 64px;
+}
+.instruments__title {
+  transform: translate(-180px, -40px);
+}
+.instruments__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 10px;
+  transform: translateX(32px);
+}
+.instruments__item {
+  padding: 10px 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #3F8FFF;
+  border-radius: 47px;
+  color: #ffffff;
+}/*# sourceMappingURL=developer.css.map */
